@@ -98,7 +98,15 @@ excl tax, incl tax, VAT</string>
                 </constraints>
                 <viewLayoutGuide key="safeArea" id="lzT-f3-Jn9"/>
             </view>
-            <point key="canvasLocation" x="-87.200000000000003" y="-174.06296851574214"/>
+            <connections>
+                <outlet property="candyImageView" destination="fUP-Y6-tUo" id="AVT-F4-lu7"/>
+                <outlet property="descriptionLabel" destination="FHe-um-CeO" id="S8V-31-jyw"/>
+                <outlet property="priceLabel" destination="ue6-m7-dph" id="C5g-iO-U2A"/>
+                <outlet property="quantityLabel" destination="tWc-sJ-kU3" id="QwC-wc-ANh"/>
+                <outlet property="quantityStepper" destination="o1S-ns-JIz" id="R3h-Lf-x5n"/>
+                <outlet property="titleLabel" destination="Hf1-Q9-l2j" id="2iq-jt-7LB"/>
+            </connections>
+            <point key="canvasLocation" x="-268" y="-164"/>
         </viewController>
     </objects>
     <resources>

@@ -15,6 +15,14 @@ class CandyView: UIViewController {
     
     private var object : CandyEntity?
     
+    @IBOutlet weak var candyImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var quantityStepper: UIStepper!
+    @IBOutlet weak var quantityLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = CandyPresenter(view: self)
