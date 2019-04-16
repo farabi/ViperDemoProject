@@ -16,6 +16,7 @@ import UIKit
  */
 /// Candy Module View Protocol
 protocol CandyViewProtocol: class {
+    var presenter: CandyPresenterProtocol? { get set }
     // Update UI with value returned.
     /// Set the view Object of Type CandyEntity
     func set(object: CandyEntity)
@@ -25,14 +26,14 @@ protocol CandyViewProtocol: class {
 /// Candy Module Interactor Protocol
 protocol CandyInteractorProtocol {
     // Fetch Object from Data Layer
-    func fetch(objectFor presenter: CandyPresenterProtocol)
+    func fetch(candyFor presenter: CandyPresenterProtocol)
 }
 
 //MARK: Presenter -
 /// Candy Module Presenter Protocol
-protocol CandyPresenterProtocol {
+protocol CandyPresenterProtocol : class {
     /// The presenter will fetch data from the Interactor thru implementing the Interactor fetch function.
-    func fetch(objectFor view: CandyViewProtocol)
+    func fetch(candyFor view: CandyViewProtocol)
     /// The Interactor will inform the Presenter a successful fetch.
     func interactor(_ interactor: CandyInteractorProtocol, didFetch object: CandyEntity)
     /// The Interactor will inform the Presenter a failed fetch.

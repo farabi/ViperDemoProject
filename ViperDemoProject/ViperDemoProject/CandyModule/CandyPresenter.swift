@@ -6,30 +6,34 @@
 //  Copyright © 2019 Saad El Oulladi. All rights reserved.
 //
 
-import UIKit
+import Foundation
+
+/// Candy View Model
+struct CandyViewModel {
+    let title: String
+    let description: String
+    let price: String
+    let quantity: String
+    let imageName: String
+}
 
 /// Candy Module Presenter
 class CandyPresenter {
-    
-    weak private var _view: CandyViewProtocol?
-    private var interactor: CandyInteractorProtocol
-    private var wireframe: CandyRouterProtocol
-    
-    init(view: CandyViewProtocol) {
-        self._view = view
-        self.interactor = CandyInteractor()
-        self.wireframe = CandyRouter()
-    }
+
+    weak var view: CandyViewProtocol?
+    var wireframe: CandyRouterProtocol?
+    var interactor: CandyInteractorProtocol?
 }
 
 // MARK: - extending CandyPresenter to implement it's protocol
 extension CandyPresenter: CandyPresenterProtocol {
-    func fetch(objectFor view: CandyViewProtocol) {
 
+    func fetch(candyFor view: CandyViewProtocol) {
+        interactor?.fetch(candyFor: self)
     }
     
     func interactor(_ interactor: CandyInteractorProtocol, didFetch object: CandyEntity) {
-
+        
     }
     
     func interactor(_ interactor: CandyInteractorProtocol, didFailWith error: Error) {

@@ -12,6 +12,7 @@
 		9344E7BB225534CE0035DE3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9344E7B9225534CE0035DE3F /* LaunchScreen.storyboard */; };
 		9344E7C6225534CE0035DE3F /* ViperDemoProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344E7C5225534CE0035DE3F /* ViperDemoProjectTests.swift */; };
 		9361BD1D225E147F00AB91CA /* CandyContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EC2257C2C800CB2A67 /* CandyContracts.swift */; };
+		936975692265098800B68AAA /* CandyAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936975682265098800B68AAA /* CandyAPIWorker.swift */; };
 		93DF18F12257C2C800CB2A67 /* CandyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EA2257C2C800CB2A67 /* CandyPresenter.swift */; };
 		93DF18F22257C2C800CB2A67 /* CandyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EB2257C2C800CB2A67 /* CandyRouter.swift */; };
 		93DF18F32257C2C800CB2A67 /* CandyContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EC2257C2C800CB2A67 /* CandyContracts.swift */; };
@@ -19,6 +20,7 @@
 		93DF18F52257C2C800CB2A67 /* CandyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EE2257C2C800CB2A67 /* CandyView.swift */; };
 		93DF18F62257C2C800CB2A67 /* CandyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EF2257C2C800CB2A67 /* CandyEntity.swift */; };
 		93DF18FA2257D2ED00CB2A67 /* CandyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DF18F92257D2ED00CB2A67 /* CandyView.xib */; };
+		93FED4DD22665173009DF9D9 /* CandyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FED4DC22665173009DF9D9 /* CandyBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 		9344E7C1225534CE0035DE3F /* ViperDemoProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperDemoProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9344E7C5225534CE0035DE3F /* ViperDemoProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperDemoProjectTests.swift; sourceTree = "<group>"; };
 		9344E7C7225534CE0035DE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		936975682265098800B68AAA /* CandyAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyAPIWorker.swift; sourceTree = "<group>"; };
 		93DF18EA2257C2C800CB2A67 /* CandyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyPresenter.swift; sourceTree = "<group>"; };
 		93DF18EB2257C2C800CB2A67 /* CandyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyRouter.swift; sourceTree = "<group>"; };
 		93DF18EC2257C2C800CB2A67 /* CandyContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyContracts.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		93DF18EE2257C2C800CB2A67 /* CandyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyView.swift; sourceTree = "<group>"; };
 		93DF18EF2257C2C800CB2A67 /* CandyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyEntity.swift; sourceTree = "<group>"; };
 		93DF18F92257D2ED00CB2A67 /* CandyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CandyView.xib; sourceTree = "<group>"; };
+		93FED4DC22665173009DF9D9 /* CandyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				93DF18EE2257C2C800CB2A67 /* CandyView.swift */,
 				93DF18F92257D2ED00CB2A67 /* CandyView.xib */,
 				93DF18EF2257C2C800CB2A67 /* CandyEntity.swift */,
+				936975682265098800B68AAA /* CandyAPIWorker.swift */,
+				93FED4DC22665173009DF9D9 /* CandyBuilder.swift */,
 			);
 			path = CandyModule;
 			sourceTree = "<group>";
@@ -223,10 +229,12 @@
 			files = (
 				93DF18F62257C2C800CB2A67 /* CandyEntity.swift in Sources */,
 				93DF18F12257C2C800CB2A67 /* CandyPresenter.swift in Sources */,
+				936975692265098800B68AAA /* CandyAPIWorker.swift in Sources */,
 				93DF18F42257C2C800CB2A67 /* CandyInteractor.swift in Sources */,
 				93DF18F52257C2C800CB2A67 /* CandyView.swift in Sources */,
 				93DF18F22257C2C800CB2A67 /* CandyRouter.swift in Sources */,
 				9344E7B1225534CD0035DE3F /* AppDelegate.swift in Sources */,
+				93FED4DD22665173009DF9D9 /* CandyBuilder.swift in Sources */,
 				93DF18F32257C2C800CB2A67 /* CandyContracts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

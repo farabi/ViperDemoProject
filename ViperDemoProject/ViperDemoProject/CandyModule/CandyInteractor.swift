@@ -10,8 +10,15 @@ import UIKit
 
 /// Candy Module Interactor
 class CandyInteractor: CandyInteractorProtocol {
-    func fetch(objectFor presenter: CandyPresenterProtocol) {
-        
+    
+    var apiWorker: CandyAPIWorkerProtocol?
+    var presenter: CandyPresenterProtocol?
+
+
+    func fetch(candyFor presenter: CandyPresenterProtocol) {
+        apiWorker?.fetchCandy { [unowned self] (candyEntity) in
+            self.presenter?.interactor(self, didFetch: candyEntity)
+        }
     }
     
 }

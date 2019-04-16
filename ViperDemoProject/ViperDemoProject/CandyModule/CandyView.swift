@@ -11,26 +11,23 @@ import UIKit
 /// Candy Module View
 class CandyView: UIViewController {
     
-    private var presenter: CandyPresenterProtocol!
+    var presenter: CandyPresenterProtocol?
     
     private var object : CandyEntity?
     
-    @IBOutlet weak var candyImageView: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var quantityStepper: UIStepper!
-    @IBOutlet weak var quantityLabel: UILabel!
-    
-    
+    @IBOutlet weak private var candyImageView: UIImageView!
+    @IBOutlet weak private var titleLabel: UILabel!
+    @IBOutlet weak private var descriptionLabel: UILabel!
+    @IBOutlet weak private var priceLabel: UILabel!
+    @IBOutlet weak private var quantityStepper: UIStepper!
+    @IBOutlet weak private var quantityLabel: UILabel!
+     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter = CandyPresenter(view: self)
-        
+
         // Informs the Presenter that the View is ready to receive data.
-        presenter.fetch(objectFor: self)
+        presenter?.fetch(candyFor: self)
     }
-    
 }
 
 // MARK: - extending CandyView to implement it's protocol
@@ -38,6 +35,4 @@ extension CandyView: CandyViewProtocol {
     func set(object: CandyEntity) {
 
     }
-    
-    
 }
