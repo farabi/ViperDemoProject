@@ -14,7 +14,7 @@ class CandyBuilder {
         
         //MARK: Initialise components.
         let presenter = CandyPresenter()
-        let interactor = CandyInteractor()
+        let interactor = CandyInteractor(withApiWorker: CandyAPIWorker())
         let router = CandyRouter()
         
         //MARK: link Viper components.

@@ -10,104 +10,102 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController id="atL-0g-sIo" customClass="CandyView" customModule="ViperDemoProject" customModuleProvider="target">
-            <view key="view" contentMode="scaleToFill" id="rVf-pA-agj">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUP-Y6-tUo">
-                        <rect key="frame" x="79" y="70" width="217" height="163"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="163" id="FZS-vZ-uAv"/>
-                            <constraint firstAttribute="width" constant="217" id="v2k-HC-8aV"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candy title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf1-Q9-l2j">
-                        <rect key="frame" x="33" y="263" width="99" height="23"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic candies coming from heaven, if you eat one and say a wish. Your wish will be granted." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHe-um-CeO">
-                        <rect key="frame" x="33" y="306" width="312" height="61"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o1S-ns-JIz">
-                        <rect key="frame" x="251" y="387" width="94" height="29"/>
-                    </stepper>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyH-Lc-Qtl">
-                        <rect key="frame" x="33" y="577" width="312" height="70"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtV-Z0-Z9E">
-                                <rect key="frame" x="193" y="25" width="103" height="21"/>
-                                <string key="text">HT, TTC, TVA
-excl tax, incl tax, VAT</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="70" id="4Yx-6y-ZO9"/>
-                            <constraint firstItem="JtV-Z0-Z9E" firstAttribute="top" secondItem="EyH-Lc-Qtl" secondAttribute="top" constant="25" id="k8Z-C0-A8C"/>
-                            <constraint firstAttribute="trailing" secondItem="JtV-Z0-Z9E" secondAttribute="trailing" constant="16" id="z5H-95-P0P"/>
-                        </constraints>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue6-m7-dph">
-                        <rect key="frame" x="99.5" y="391" width="42.5" height="21"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWc-sJ-kU3">
-                        <rect key="frame" x="152" y="391" width="89" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktl-XM-umg">
-                        <rect key="frame" x="246" y="436" width="99" height="30"/>
-                        <state key="normal" title=" Add to basket"/>
-                    </button>
-                </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                <constraints>
-                    <constraint firstItem="o1S-ns-JIz" firstAttribute="leading" secondItem="tWc-sJ-kU3" secondAttribute="trailing" constant="10" id="6z3-1E-K8u"/>
-                    <constraint firstItem="ktl-XM-umg" firstAttribute="trailing" secondItem="o1S-ns-JIz" secondAttribute="trailing" id="ARa-AA-7EU"/>
-                    <constraint firstItem="o1S-ns-JIz" firstAttribute="top" secondItem="FHe-um-CeO" secondAttribute="bottom" constant="20" id="CyT-Kb-8Em"/>
-                    <constraint firstItem="FHe-um-CeO" firstAttribute="leading" secondItem="Hf1-Q9-l2j" secondAttribute="leading" id="Czb-e7-uT1"/>
-                    <constraint firstItem="tWc-sJ-kU3" firstAttribute="leading" secondItem="ue6-m7-dph" secondAttribute="trailing" constant="10" id="KnB-oz-qyM"/>
-                    <constraint firstItem="o1S-ns-JIz" firstAttribute="centerY" secondItem="ue6-m7-dph" secondAttribute="centerY" id="LcD-EN-Jsv"/>
-                    <constraint firstItem="fUP-Y6-tUo" firstAttribute="centerX" secondItem="rVf-pA-agj" secondAttribute="centerX" id="RjP-JA-Vww"/>
-                    <constraint firstItem="EyH-Lc-Qtl" firstAttribute="leading" secondItem="FHe-um-CeO" secondAttribute="leading" id="Ukq-hM-aJP"/>
-                    <constraint firstItem="tWc-sJ-kU3" firstAttribute="centerY" secondItem="ue6-m7-dph" secondAttribute="centerY" id="XIm-WW-AWk"/>
-                    <constraint firstItem="lzT-f3-Jn9" firstAttribute="trailing" secondItem="FHe-um-CeO" secondAttribute="trailing" constant="30" id="ZND-Eg-EfN"/>
-                    <constraint firstItem="FHe-um-CeO" firstAttribute="top" secondItem="Hf1-Q9-l2j" secondAttribute="bottom" constant="20" id="aXK-df-D9g"/>
-                    <constraint firstItem="EyH-Lc-Qtl" firstAttribute="trailing" secondItem="FHe-um-CeO" secondAttribute="trailing" id="dCc-Wy-29g"/>
-                    <constraint firstItem="fUP-Y6-tUo" firstAttribute="top" secondItem="lzT-f3-Jn9" secondAttribute="top" constant="50" id="krp-Kw-ZE1"/>
-                    <constraint firstItem="Hf1-Q9-l2j" firstAttribute="leading" secondItem="lzT-f3-Jn9" secondAttribute="leading" constant="33" id="ofZ-mb-qmo"/>
-                    <constraint firstItem="Hf1-Q9-l2j" firstAttribute="top" secondItem="fUP-Y6-tUo" secondAttribute="bottom" constant="30" id="qOc-1k-iB1"/>
-                    <constraint firstItem="o1S-ns-JIz" firstAttribute="trailing" secondItem="FHe-um-CeO" secondAttribute="trailing" id="tae-Lj-Bgf"/>
-                    <constraint firstItem="ktl-XM-umg" firstAttribute="top" secondItem="o1S-ns-JIz" secondAttribute="bottom" constant="20" id="wvd-At-1P1"/>
-                    <constraint firstItem="lzT-f3-Jn9" firstAttribute="bottom" secondItem="EyH-Lc-Qtl" secondAttribute="bottom" constant="20" id="ziM-Kr-eOa"/>
-                </constraints>
-                <viewLayoutGuide key="safeArea" id="lzT-f3-Jn9"/>
-            </view>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CandyView" customModule="ViperDemoProject" customModuleProvider="target">
             <connections>
-                <outlet property="candyImageView" destination="fUP-Y6-tUo" id="AVT-F4-lu7"/>
-                <outlet property="descriptionLabel" destination="FHe-um-CeO" id="S8V-31-jyw"/>
-                <outlet property="priceLabel" destination="ue6-m7-dph" id="C5g-iO-U2A"/>
-                <outlet property="quantityLabel" destination="tWc-sJ-kU3" id="QwC-wc-ANh"/>
-                <outlet property="quantityStepper" destination="o1S-ns-JIz" id="R3h-Lf-x5n"/>
-                <outlet property="titleLabel" destination="Hf1-Q9-l2j" id="2iq-jt-7LB"/>
-                <outlet property="view" destination="rVf-pA-agj" id="AaG-7d-m2b"/>
+                <outlet property="candyImageView" destination="fUP-Y6-tUo" id="Wy6-sE-eoO"/>
+                <outlet property="descriptionLabel" destination="FHe-um-CeO" id="OnB-82-cJi"/>
+                <outlet property="priceLabel" destination="ue6-m7-dph" id="Qgf-TT-neh"/>
+                <outlet property="quantityLabel" destination="tWc-sJ-kU3" id="ZDg-mm-t7d"/>
+                <outlet property="quantityStepper" destination="o1S-ns-JIz" id="cYR-qL-xId"/>
+                <outlet property="titleLabel" destination="Hf1-Q9-l2j" id="Wkl-70-ock"/>
+                <outlet property="view" destination="rVf-pA-agj" id="4lA-U1-MuO"/>
             </connections>
-            <point key="canvasLocation" x="-268" y="-164"/>
-        </viewController>
+        </placeholder>
+        <view contentMode="scaleToFill" id="rVf-pA-agj">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUP-Y6-tUo">
+                    <rect key="frame" x="79" y="70" width="217" height="163"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="163" id="FZS-vZ-uAv"/>
+                        <constraint firstAttribute="width" constant="217" id="v2k-HC-8aV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candy title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf1-Q9-l2j">
+                    <rect key="frame" x="33" y="263" width="99" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magic candies coming from heaven, if you eat one and say a wish. Your wish will be granted." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHe-um-CeO">
+                    <rect key="frame" x="33" y="306" width="312" height="61"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o1S-ns-JIz">
+                    <rect key="frame" x="251" y="387" width="94" height="29"/>
+                </stepper>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyH-Lc-Qtl">
+                    <rect key="frame" x="33" y="577" width="312" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtV-Z0-Z9E">
+                            <rect key="frame" x="193" y="25" width="103" height="21"/>
+                            <string key="text">HT, TTC, TVA
+excl tax, incl tax, VAT</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="4Yx-6y-ZO9"/>
+                        <constraint firstItem="JtV-Z0-Z9E" firstAttribute="top" secondItem="EyH-Lc-Qtl" secondAttribute="top" constant="25" id="k8Z-C0-A8C"/>
+                        <constraint firstAttribute="trailing" secondItem="JtV-Z0-Z9E" secondAttribute="trailing" constant="16" id="z5H-95-P0P"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue6-m7-dph">
+                    <rect key="frame" x="99.5" y="391" width="42.5" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity : 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWc-sJ-kU3">
+                    <rect key="frame" x="152" y="391" width="89" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktl-XM-umg">
+                    <rect key="frame" x="246" y="436" width="99" height="30"/>
+                    <state key="normal" title=" Add to basket"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="o1S-ns-JIz" firstAttribute="leading" secondItem="tWc-sJ-kU3" secondAttribute="trailing" constant="10" id="6z3-1E-K8u"/>
+                <constraint firstItem="ktl-XM-umg" firstAttribute="trailing" secondItem="o1S-ns-JIz" secondAttribute="trailing" id="ARa-AA-7EU"/>
+                <constraint firstItem="o1S-ns-JIz" firstAttribute="top" secondItem="FHe-um-CeO" secondAttribute="bottom" constant="20" id="CyT-Kb-8Em"/>
+                <constraint firstItem="FHe-um-CeO" firstAttribute="leading" secondItem="Hf1-Q9-l2j" secondAttribute="leading" id="Czb-e7-uT1"/>
+                <constraint firstItem="tWc-sJ-kU3" firstAttribute="leading" secondItem="ue6-m7-dph" secondAttribute="trailing" constant="10" id="KnB-oz-qyM"/>
+                <constraint firstItem="o1S-ns-JIz" firstAttribute="centerY" secondItem="ue6-m7-dph" secondAttribute="centerY" id="LcD-EN-Jsv"/>
+                <constraint firstItem="fUP-Y6-tUo" firstAttribute="centerX" secondItem="rVf-pA-agj" secondAttribute="centerX" id="RjP-JA-Vww"/>
+                <constraint firstItem="EyH-Lc-Qtl" firstAttribute="leading" secondItem="FHe-um-CeO" secondAttribute="leading" id="Ukq-hM-aJP"/>
+                <constraint firstItem="tWc-sJ-kU3" firstAttribute="centerY" secondItem="ue6-m7-dph" secondAttribute="centerY" id="XIm-WW-AWk"/>
+                <constraint firstItem="lzT-f3-Jn9" firstAttribute="trailing" secondItem="FHe-um-CeO" secondAttribute="trailing" constant="30" id="ZND-Eg-EfN"/>
+                <constraint firstItem="FHe-um-CeO" firstAttribute="top" secondItem="Hf1-Q9-l2j" secondAttribute="bottom" constant="20" id="aXK-df-D9g"/>
+                <constraint firstItem="EyH-Lc-Qtl" firstAttribute="trailing" secondItem="FHe-um-CeO" secondAttribute="trailing" id="dCc-Wy-29g"/>
+                <constraint firstItem="fUP-Y6-tUo" firstAttribute="top" secondItem="lzT-f3-Jn9" secondAttribute="top" constant="50" id="krp-Kw-ZE1"/>
+                <constraint firstItem="Hf1-Q9-l2j" firstAttribute="leading" secondItem="lzT-f3-Jn9" secondAttribute="leading" constant="33" id="ofZ-mb-qmo"/>
+                <constraint firstItem="Hf1-Q9-l2j" firstAttribute="top" secondItem="fUP-Y6-tUo" secondAttribute="bottom" constant="30" id="qOc-1k-iB1"/>
+                <constraint firstItem="o1S-ns-JIz" firstAttribute="trailing" secondItem="FHe-um-CeO" secondAttribute="trailing" id="tae-Lj-Bgf"/>
+                <constraint firstItem="ktl-XM-umg" firstAttribute="top" secondItem="o1S-ns-JIz" secondAttribute="bottom" constant="20" id="wvd-At-1P1"/>
+                <constraint firstItem="lzT-f3-Jn9" firstAttribute="bottom" secondItem="EyH-Lc-Qtl" secondAttribute="bottom" constant="20" id="ziM-Kr-eOa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="lzT-f3-Jn9"/>
+        </view>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
     </objects>
 </document>

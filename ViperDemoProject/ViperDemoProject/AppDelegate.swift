@@ -16,11 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        window = UIWindow(frame: UIScreen.main.bounds);
-        let candyView = CandyView(nibName: "CandyView", bundle: nil)
-        window?.rootViewController = candyView
+        window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        
+
+        let candyView = CandyView(nibName: "CandyView", bundle: nil)
+        let navController = UINavigationController(rootViewController: candyView) // Integrate navigation controller programmatically if you want
+
+        window?.rootViewController = navController
+
         CandyBuilder.buildModule(arroundView: candyView)
         
         return true
