@@ -21,7 +21,7 @@ class CandyView: UIViewController {
     @IBOutlet weak private var priceLabel: UILabel!
     @IBOutlet weak private var quantityStepper: UIStepper!
     @IBOutlet weak private var quantityLabel: UILabel!
-     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +32,12 @@ class CandyView: UIViewController {
 
 // MARK: - extending CandyView to implement it's protocol
 extension CandyView: CandyViewProtocol {
-    func set(object: CandyEntity) {
+    func set(viewModel: CandyViewModel) {
 
+        titleLabel.text = viewModel.title
+        descriptionLabel.text = viewModel.description
+        priceLabel.text = viewModel.price
+
+        candyImageView.image = UIImage(named: viewModel.imageName)
     }
 }

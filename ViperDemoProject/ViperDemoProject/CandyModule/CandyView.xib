@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magic_candy" translatesAutoresizingMaskIntoConstraints="NO" id="fUP-Y6-tUo">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUP-Y6-tUo">
                         <rect key="frame" x="79" y="70" width="217" height="163"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="163" id="FZS-vZ-uAv"/>
@@ -105,11 +105,9 @@ excl tax, incl tax, VAT</string>
                 <outlet property="quantityLabel" destination="tWc-sJ-kU3" id="QwC-wc-ANh"/>
                 <outlet property="quantityStepper" destination="o1S-ns-JIz" id="R3h-Lf-x5n"/>
                 <outlet property="titleLabel" destination="Hf1-Q9-l2j" id="2iq-jt-7LB"/>
+                <outlet property="view" destination="rVf-pA-agj" id="AaG-7d-m2b"/>
             </connections>
             <point key="canvasLocation" x="-268" y="-164"/>
         </viewController>
     </objects>
-    <resources>
-        <image name="magic_candy" width="160" height="119"/>
-    </resources>
 </document>

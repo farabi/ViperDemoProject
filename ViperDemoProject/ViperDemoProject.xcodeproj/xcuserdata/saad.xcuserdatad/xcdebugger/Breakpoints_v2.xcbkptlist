@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperDemoProject/CandyModule/CandyView.swift"
-            timestampString = "577132442.179158"
+            timestampString = "577136119.577062"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperDemoProject/CandyModule/CandyPresenter.swift"
-            timestampString = "577132453.7437021"
+            timestampString = "577136119.577132"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "fetch(candyFor:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "interactor(_:didFetch:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

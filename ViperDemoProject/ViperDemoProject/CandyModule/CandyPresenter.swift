@@ -34,6 +34,17 @@ extension CandyPresenter: CandyPresenterProtocol {
     
     func interactor(_ interactor: CandyInteractorProtocol, didFetch object: CandyEntity) {
         
+        let priceText = "\(object.price) €"
+        let quantityText = "\(object.price) €"
+
+        let candyViewModel = CandyViewModel(title: object.title,
+                                            description: object.description,
+                                            price: priceText,
+                                            quantity: quantityText,
+                                            imageName: object.imageName)
+        
+        view?.set(viewModel: candyViewModel)
+        
     }
     
     func interactor(_ interactor: CandyInteractorProtocol, didFailWith error: Error) {

@@ -19,7 +19,7 @@ protocol CandyViewProtocol: class {
     var presenter: CandyPresenterProtocol? { get set }
     // Update UI with value returned.
     /// Set the view Object of Type CandyEntity
-    func set(object: CandyEntity)
+    func set(viewModel: CandyViewModel)
 }
 
 //MARK: Interactor -
