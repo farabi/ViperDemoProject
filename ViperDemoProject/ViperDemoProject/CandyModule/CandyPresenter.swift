@@ -16,6 +16,14 @@ struct CandyViewModel {
     let imageName: String
 }
 
+/// Total Price View Model
+struct TotalPriceViewModel {
+    let totalPrice: String
+    let totalInclTax: String
+    let vat: String
+    let quantity: String
+}
+
 /// Candy Module Presenter
 class CandyPresenter {
 
@@ -26,11 +34,16 @@ class CandyPresenter {
 
 // MARK: - extending CandyPresenter to implement it's protocol
 extension CandyPresenter: CandyPresenterProtocol {
-
-    func fetch(candyFor view: CandyViewProtocol) {
+    
+    func fetchCandy() {
         interactor?.fetch(candyFor: self)
     }
     
+    func update(candyQuantity quantity:Int) {
+        interactor?.update(candyQuantity: quantity)
+    }
+    
+    // MARK: - implement UI action handler
     func interactor(_ interactor: CandyInteractorProtocol, didFetch object: CandyEntity) {
         
         let priceText = "\(object.price) €"
@@ -48,4 +61,30 @@ extension CandyPresenter: CandyPresenterProtocol {
 
     }
     
+    func interactor(_ interactor: CandyInteractorProtocol,
+                    didUpdateTotalPrice totalPrice: Float,
+                    totalInclTax: Float,
+                    vat: Float,
+                    quantity: Int) {
+
+        let totalPriceText = "Total Price : \(totalPrice)€"
+        let totalInclTaxText = "Incl Tax : \(totalInclTax)€"
+        let vatText = "Incl Tax : \(vat)%"
+        let quantity = "Quantity : \(quantity)"
+        
+        let totalPriceViewModel = TotalPriceViewModel(totalPrice: totalPriceText, totalInclTax: totalInclTaxText, vat: vatText, quantity: quantity)
+        view?.set(totalPriceViewModel: totalPriceViewModel)
+    }
 }
+
+// MARK: - extending CandyPresenter to implement UI action handler protocol
+/*extension CandyPresenter: CandyActionHandlerProtocol {
+    
+    func fetchCandy() {
+        interactor?.fetch(candyFor: self)
+    }
+    
+    func update(candyQuantity quantity:Int) {
+    }
+}*/
+

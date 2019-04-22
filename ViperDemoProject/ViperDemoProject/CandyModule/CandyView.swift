@@ -26,12 +26,18 @@ class CandyView: UIViewController {
         super.viewDidLoad()
 
         // Informs the Presenter that the View is ready to receive data.
-        presenter?.fetch(candyFor: self)
+        presenter?.fetchCandy()
     }
+    
+    @IBAction func quantityStepperValueChanged(_ sender: Any) {
+        presenter?.update(candyQuantity: Int(quantityStepper!.value))
+    }
+    
 }
 
 // MARK: - extending CandyView to implement it's protocol
 extension CandyView: CandyViewProtocol {
+    
     func set(viewModel: CandyViewModel) {
 
         titleLabel.text = viewModel.title
@@ -40,4 +46,9 @@ extension CandyView: CandyViewProtocol {
 
         candyImageView.image = UIImage(named: viewModel.imageName)
     }
+    
+    func set(totalPriceViewModel viewModel: TotalPriceViewModel) {
+        quantityLabel.text = viewModel.quantity
+    }
+
 }

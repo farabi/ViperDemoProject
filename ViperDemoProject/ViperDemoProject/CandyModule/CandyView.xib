@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -46,6 +45,9 @@
                 </label>
                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="o1S-ns-JIz">
                     <rect key="frame" x="251" y="387" width="94" height="29"/>
+                    <connections>
+                        <action selector="quantityStepperValueChanged:" destination="-1" eventType="valueChanged" id="A5d-GQ-kUO"/>
+                    </connections>
                 </stepper>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyH-Lc-Qtl">
                     <rect key="frame" x="33" y="577" width="312" height="70"/>
@@ -78,15 +80,10 @@ excl tax, incl tax, VAT</string>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktl-XM-umg">
-                    <rect key="frame" x="246" y="436" width="99" height="30"/>
-                    <state key="normal" title=" Add to basket"/>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="o1S-ns-JIz" firstAttribute="leading" secondItem="tWc-sJ-kU3" secondAttribute="trailing" constant="10" id="6z3-1E-K8u"/>
-                <constraint firstItem="ktl-XM-umg" firstAttribute="trailing" secondItem="o1S-ns-JIz" secondAttribute="trailing" id="ARa-AA-7EU"/>
                 <constraint firstItem="o1S-ns-JIz" firstAttribute="top" secondItem="FHe-um-CeO" secondAttribute="bottom" constant="20" id="CyT-Kb-8Em"/>
                 <constraint firstItem="FHe-um-CeO" firstAttribute="leading" secondItem="Hf1-Q9-l2j" secondAttribute="leading" id="Czb-e7-uT1"/>
                 <constraint firstItem="tWc-sJ-kU3" firstAttribute="leading" secondItem="ue6-m7-dph" secondAttribute="trailing" constant="10" id="KnB-oz-qyM"/>
@@ -101,7 +98,6 @@ excl tax, incl tax, VAT</string>
                 <constraint firstItem="Hf1-Q9-l2j" firstAttribute="leading" secondItem="lzT-f3-Jn9" secondAttribute="leading" constant="33" id="ofZ-mb-qmo"/>
                 <constraint firstItem="Hf1-Q9-l2j" firstAttribute="top" secondItem="fUP-Y6-tUo" secondAttribute="bottom" constant="30" id="qOc-1k-iB1"/>
                 <constraint firstItem="o1S-ns-JIz" firstAttribute="trailing" secondItem="FHe-um-CeO" secondAttribute="trailing" id="tae-Lj-Bgf"/>
-                <constraint firstItem="ktl-XM-umg" firstAttribute="top" secondItem="o1S-ns-JIz" secondAttribute="bottom" constant="20" id="wvd-At-1P1"/>
                 <constraint firstItem="lzT-f3-Jn9" firstAttribute="bottom" secondItem="EyH-Lc-Qtl" secondAttribute="bottom" constant="20" id="ziM-Kr-eOa"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="lzT-f3-Jn9"/>
