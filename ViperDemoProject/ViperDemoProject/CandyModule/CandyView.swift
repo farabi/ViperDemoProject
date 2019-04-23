@@ -22,6 +22,11 @@ class CandyView: UIViewController {
     @IBOutlet weak private var quantityStepper: UIStepper!
     @IBOutlet weak private var quantityLabel: UILabel!
     
+    @IBOutlet weak var totalPriceLabel: UILabel!
+    @IBOutlet weak var taxLabel: UILabel!
+    @IBOutlet weak var inclTaxLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -48,7 +53,11 @@ extension CandyView: CandyViewProtocol {
     }
     
     func set(totalPriceViewModel viewModel: TotalPriceViewModel) {
+        //excl tax, incl tax, VAT
         quantityLabel.text = viewModel.quantity
+        totalPriceLabel.text = viewModel.totalPrice
+        taxLabel.text = viewModel.vat
+        inclTaxLabel.text = viewModel.totalInclTax
     }
 
 }

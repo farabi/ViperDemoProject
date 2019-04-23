@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperDemoProject/CandyModule/CandyView.swift"
-            timestampString = "577392535.587961"
+            timestampString = "577714029.4161609"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperDemoProject/CandyModule/CandyPresenter.swift"
-            timestampString = "577393061.459541"
+            timestampString = "577711663.648851"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
-            landmarkName = "fetch(candyFor:)"
-            landmarkType = "7">
+            landmarkName = "CandyPresenter"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,13 +42,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperDemoProject/CandyModule/CandyPresenter.swift"
-            timestampString = "577393061.46012"
+            timestampString = "577711663.648916"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "interactor(_:didFetch:)"
-            landmarkType = "7">
+            landmarkName = "CandyPresenter"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperDemoProject/CandyModule/CandyInteractor.swift"
-            timestampString = "577393061.460552"
+            timestampString = "577714029.416784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
             endingLineNumber = "22"
-            landmarkName = "fetch(candyFor:)"
+            landmarkName = "init(withApiWorker:)"
             landmarkType = "7">
             <Locations>
                <Location
@@ -122,13 +122,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperDemoProject/CandyModule/CandyInteractor.swift"
-            timestampString = "577393061.460691"
+            timestampString = "577714029.416867"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "fetch(candyFor:)"
-            landmarkType = "7">
+            landmarkName = "CandyInteractor"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

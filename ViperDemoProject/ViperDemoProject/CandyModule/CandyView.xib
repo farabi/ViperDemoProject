@@ -13,10 +13,13 @@
             <connections>
                 <outlet property="candyImageView" destination="fUP-Y6-tUo" id="Wy6-sE-eoO"/>
                 <outlet property="descriptionLabel" destination="FHe-um-CeO" id="OnB-82-cJi"/>
+                <outlet property="inclTaxLabel" destination="5lG-7R-Mt4" id="cBV-6w-I1N"/>
                 <outlet property="priceLabel" destination="ue6-m7-dph" id="Qgf-TT-neh"/>
                 <outlet property="quantityLabel" destination="tWc-sJ-kU3" id="ZDg-mm-t7d"/>
                 <outlet property="quantityStepper" destination="o1S-ns-JIz" id="cYR-qL-xId"/>
+                <outlet property="taxLabel" destination="Uhy-XK-HNN" id="nuG-aQ-cok"/>
                 <outlet property="titleLabel" destination="Hf1-Q9-l2j" id="Wkl-70-ock"/>
+                <outlet property="totalPriceLabel" destination="Tf6-wO-Dgp" id="xFo-Dc-04X"/>
                 <outlet property="view" destination="rVf-pA-agj" id="4lA-U1-MuO"/>
             </connections>
         </placeholder>
@@ -52,10 +55,20 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EyH-Lc-Qtl">
                     <rect key="frame" x="33" y="577" width="312" height="70"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtV-Z0-Z9E">
-                            <rect key="frame" x="193" y="25" width="103" height="21"/>
-                            <string key="text">HT, TTC, TVA
-excl tax, incl tax, VAT</string>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tva : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhy-XK-HNN">
+                            <rect key="frame" x="191" y="39" width="41" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excl :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lG-7R-Mt4">
+                            <rect key="frame" x="262" y="39" width="40" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price : 0€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf6-wO-Dgp">
+                            <rect key="frame" x="228" y="10" width="74" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -64,8 +77,12 @@ excl tax, incl tax, VAT</string>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="70" id="4Yx-6y-ZO9"/>
-                        <constraint firstItem="JtV-Z0-Z9E" firstAttribute="top" secondItem="EyH-Lc-Qtl" secondAttribute="top" constant="25" id="k8Z-C0-A8C"/>
-                        <constraint firstAttribute="trailing" secondItem="JtV-Z0-Z9E" secondAttribute="trailing" constant="16" id="z5H-95-P0P"/>
+                        <constraint firstItem="5lG-7R-Mt4" firstAttribute="leading" secondItem="Uhy-XK-HNN" secondAttribute="trailing" constant="30" id="HlS-nw-Zx3"/>
+                        <constraint firstAttribute="bottom" secondItem="Uhy-XK-HNN" secondAttribute="bottom" constant="10" id="KSm-zF-5YK"/>
+                        <constraint firstItem="Tf6-wO-Dgp" firstAttribute="top" secondItem="EyH-Lc-Qtl" secondAttribute="top" constant="10" id="Maz-nd-iPC"/>
+                        <constraint firstAttribute="trailing" secondItem="5lG-7R-Mt4" secondAttribute="trailing" constant="10" id="Vnf-Ak-8PS"/>
+                        <constraint firstAttribute="bottom" secondItem="5lG-7R-Mt4" secondAttribute="bottom" constant="10" id="jqu-FW-Nzh"/>
+                        <constraint firstItem="5lG-7R-Mt4" firstAttribute="trailing" secondItem="Tf6-wO-Dgp" secondAttribute="trailing" id="moX-ol-Njs"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue6-m7-dph">

@@ -11,7 +11,7 @@ import UIKit
 /// Candy Module Interactor
 class CandyInteractor: CandyInteractorProtocol {
     
-    private static let vat = 6.5
+    private static let vat:Float = 6.5
     private var candyEntity:CandyEntity?
     
     var presenter: CandyPresenterProtocol?
@@ -30,13 +30,17 @@ class CandyInteractor: CandyInteractorProtocol {
     
     func update(candyQuantity quantity: Int) {
         guard let candyEntity = self.candyEntity else {
-            return // we can send an error here
+            // FIXME: [your bug fix reminder].
+            return
         }
         
+        let totalPrice = candyEntity.price * Float(quantity)
+        let tax = (totalPrice/100) * CandyInteractor.vat
+        let totalInclTax = totalPrice + tax
         self.presenter?.interactor(self,
-                                   didUpdateTotalPrice: 30,
-                                   totalInclTax: 12,
-                                   vat: 10,
+                                   didUpdateTotalPrice: totalPrice,
+                                   totalInclTax: totalInclTax,
+                                   vat: CandyInteractor.vat,
                                    quantity: quantity)
     }
 
