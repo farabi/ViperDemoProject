@@ -11,11 +11,9 @@
 		9344E7B8225534CE0035DE3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9344E7B7225534CE0035DE3F /* Assets.xcassets */; };
 		9344E7BB225534CE0035DE3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9344E7B9225534CE0035DE3F /* LaunchScreen.storyboard */; };
 		9344E7C6225534CE0035DE3F /* ViperDemoProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9344E7C5225534CE0035DE3F /* ViperDemoProjectTests.swift */; };
-		9361BD1D225E147F00AB91CA /* CandyContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EC2257C2C800CB2A67 /* CandyContracts.swift */; };
 		936975692265098800B68AAA /* CandyAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936975682265098800B68AAA /* CandyAPIWorker.swift */; };
 		93DF18F12257C2C800CB2A67 /* CandyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EA2257C2C800CB2A67 /* CandyPresenter.swift */; };
 		93DF18F22257C2C800CB2A67 /* CandyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EB2257C2C800CB2A67 /* CandyRouter.swift */; };
-		93DF18F32257C2C800CB2A67 /* CandyContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EC2257C2C800CB2A67 /* CandyContracts.swift */; };
 		93DF18F42257C2C800CB2A67 /* CandyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18ED2257C2C800CB2A67 /* CandyInteractor.swift */; };
 		93DF18F52257C2C800CB2A67 /* CandyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EE2257C2C800CB2A67 /* CandyView.swift */; };
 		93DF18F62257C2C800CB2A67 /* CandyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DF18EF2257C2C800CB2A67 /* CandyEntity.swift */; };
@@ -45,7 +43,6 @@
 		936975682265098800B68AAA /* CandyAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyAPIWorker.swift; sourceTree = "<group>"; };
 		93DF18EA2257C2C800CB2A67 /* CandyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyPresenter.swift; sourceTree = "<group>"; };
 		93DF18EB2257C2C800CB2A67 /* CandyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyRouter.swift; sourceTree = "<group>"; };
-		93DF18EC2257C2C800CB2A67 /* CandyContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyContracts.swift; sourceTree = "<group>"; };
 		93DF18ED2257C2C800CB2A67 /* CandyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyInteractor.swift; sourceTree = "<group>"; };
 		93DF18EE2257C2C800CB2A67 /* CandyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyView.swift; sourceTree = "<group>"; };
 		93DF18EF2257C2C800CB2A67 /* CandyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyEntity.swift; sourceTree = "<group>"; };
@@ -110,17 +107,64 @@
 			path = ViperDemoProjectTests;
 			sourceTree = "<group>";
 		};
-		93DF18F72257C4A000CB2A67 /* CandyModule */ = {
+		935C100922932D0A00BBB922 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				93DF18EA2257C2C800CB2A67 /* CandyPresenter.swift */,
-				93DF18EB2257C2C800CB2A67 /* CandyRouter.swift */,
-				93DF18EC2257C2C800CB2A67 /* CandyContracts.swift */,
-				93DF18ED2257C2C800CB2A67 /* CandyInteractor.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		935C100A22932D1400BBB922 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				93DF18EE2257C2C800CB2A67 /* CandyView.swift */,
 				93DF18F92257D2ED00CB2A67 /* CandyView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		935C100B22932D2100BBB922 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				93DF18ED2257C2C800CB2A67 /* CandyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		935C100C22932D3A00BBB922 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
 				93DF18EF2257C2C800CB2A67 /* CandyEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		935C100D22932D4600BBB922 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
 				936975682265098800B68AAA /* CandyAPIWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		935C100E22932F0800BBB922 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				93DF18EB2257C2C800CB2A67 /* CandyRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		93DF18F72257C4A000CB2A67 /* CandyModule */ = {
+			isa = PBXGroup;
+			children = (
+				935C100E22932F0800BBB922 /* Router */,
+				935C100C22932D3A00BBB922 /* Entity */,
+				935C100D22932D4600BBB922 /* Worker */,
+				935C100B22932D2100BBB922 /* Interactor */,
+				935C100A22932D1400BBB922 /* View */,
+				935C100922932D0A00BBB922 /* Presenter */,
 				93FED4DC22665173009DF9D9 /* CandyBuilder.swift */,
 			);
 			path = CandyModule;
@@ -235,7 +279,6 @@
 				93DF18F22257C2C800CB2A67 /* CandyRouter.swift in Sources */,
 				9344E7B1225534CD0035DE3F /* AppDelegate.swift in Sources */,
 				93FED4DD22665173009DF9D9 /* CandyBuilder.swift in Sources */,
-				93DF18F32257C2C800CB2A67 /* CandyContracts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +287,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9344E7C6225534CE0035DE3F /* ViperDemoProjectTests.swift in Sources */,
-				9361BD1D225E147F00AB91CA /* CandyContracts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

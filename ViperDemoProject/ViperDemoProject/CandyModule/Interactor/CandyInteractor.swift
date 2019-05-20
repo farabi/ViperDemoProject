@@ -8,6 +8,14 @@
 
 import UIKit
 
+/// Candy Module Interactor Protocol
+protocol CandyInteractorProtocol {
+    // Fetch Canry Entity from Data Layer
+    func fetch(candyFor presenter: CandyPresenterProtocol)
+    // Fetch Object from Data Layer
+    func update(candyQuantity quantity:Int)
+}
+
 /// Candy Module Interactor
 class CandyInteractor: CandyInteractorProtocol {
     

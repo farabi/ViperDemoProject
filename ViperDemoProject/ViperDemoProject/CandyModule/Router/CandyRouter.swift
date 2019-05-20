@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CandyRouterProtocol {
+    
+}
+
 /// Candy Module Router (aka: Wireframe)
 class CandyRouter: CandyRouterProtocol {
         

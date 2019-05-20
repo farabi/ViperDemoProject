@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ViperDemoProject/CandyModule/CandyView.swift"
-            timestampString = "577714029.4161609"
+            timestampString = "580070265.8842109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -57,54 +57,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ViperDemoProject/CandyModule/CandyInteractor.swift"
-            timestampString = "577714029.416784"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "init(withApiWorker:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ViperDemoProject.CandyInteractor.fetch(candyFor: ViperDemoProject.CandyPresenterProtocol) -&gt; ()"
-                  moduleName = "ViperDemoProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Saad/Documents/ViperDemo/ViperDemoProject/ViperDemoProject/CandyModule/CandyInteractor.swift"
-                  timestampString = "577393061.690015"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "37">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (ViperDemoProject.CandyEntity) -&gt; () in ViperDemoProject.CandyInteractor.fetch(candyFor: ViperDemoProject.CandyPresenterProtocol) -&gt; ()"
-                  moduleName = "ViperDemoProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Saad/Documents/ViperDemo/ViperDemoProject/ViperDemoProject/CandyModule/CandyInteractor.swift"
-                  timestampString = "577393061.700797"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "86">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ViperDemoProject/CandyModule/CandyAPIWorker.swift"
             timestampString = "577392604.159685"
             startingColumnNumber = "9223372036854775807"
@@ -113,22 +65,6 @@
             endingLineNumber = "18"
             landmarkName = "fetchCandy(callBack:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ViperDemoProject/CandyModule/CandyInteractor.swift"
-            timestampString = "577714029.416867"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "CandyInteractor"
-            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

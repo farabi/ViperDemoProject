@@ -8,6 +8,16 @@
 
 import UIKit
 
+/// Candy Module View Protocol
+protocol CandyViewProtocol: class {
+    var presenter: CandyPresenterProtocol? { get set }
+    // Update UI with value returned.
+    /// Set the view Object of Type CandyEntity
+    func set(viewModel: CandyViewModel)
+    /// Set the view price object
+    func set(totalPriceViewModel viewModel: TotalPriceViewModel)
+}
+
 /// Candy Module View
 class CandyView: UIViewController {
     
@@ -22,9 +32,9 @@ class CandyView: UIViewController {
     @IBOutlet weak private var quantityStepper: UIStepper!
     @IBOutlet weak private var quantityLabel: UILabel!
     
-    @IBOutlet weak var totalPriceLabel: UILabel!
-    @IBOutlet weak var taxLabel: UILabel!
-    @IBOutlet weak var inclTaxLabel: UILabel!
+    @IBOutlet weak private var totalPriceLabel: UILabel!
+    @IBOutlet weak private var taxLabel: UILabel!
+    @IBOutlet weak private var inclTaxLabel: UILabel!
     
     
     override func viewDidLoad() {
