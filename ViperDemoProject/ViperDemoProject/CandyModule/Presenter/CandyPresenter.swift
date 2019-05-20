@@ -19,7 +19,7 @@ protocol CandyPresenterProtocol : class {
     func interactor(_ interactor: CandyInteractorProtocol, didFetch object: CandyEntity)
     /// The Interactor will inform the Presenter a failed fetch.
     func interactor(_ interactor: CandyInteractorProtocol, didFailWith error: Error)
-    /// The Interactor updates the Presenter with new total proce.
+    /// The Interactor updates the Presenter with new total price.
     func interactor(_ interactor: CandyInteractorProtocol, didUpdateTotalPrice totalPrice:Float, totalInclTax:Float,vat:Float, quantity:Int)
 }
 

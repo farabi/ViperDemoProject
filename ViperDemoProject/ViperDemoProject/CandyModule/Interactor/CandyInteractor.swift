@@ -38,7 +38,6 @@ class CandyInteractor: CandyInteractorProtocol {
     
     func update(candyQuantity quantity: Int) {
         guard let candyEntity = self.candyEntity else {
-            // FIXME: [your bug fix reminder].
             return
         }
         
