@@ -51,7 +51,7 @@ class CandyPresenter {
 extension CandyPresenter: CandyPresenterProtocol {
     
     func fetchCandy() {
-        interactor?.fetch(candyFor: self)
+        interactor?.fetchCandy()
     }
     
     func update(candyQuantity quantity:Int) {
@@ -71,7 +71,7 @@ extension CandyPresenter: CandyPresenterProtocol {
     }
     
     func interactor(_ interactor: CandyInteractorProtocol, didFailWith error: Error) {
-
+        // Manage fetch failure
     }
     
     func interactor(_ interactor: CandyInteractorProtocol,
@@ -82,7 +82,7 @@ extension CandyPresenter: CandyPresenterProtocol {
 
         let totalPriceText = "Total Price : \(totalPrice)€"
         let totalInclTaxText = "Incl Tax : \(totalInclTax)€"
-        let vatText = "Incl Tax : \(vat)%"
+        let vatText = "Tax : \(vat)%"
         let quantity = "Quantity : \(quantity)"
         
         let totalPriceViewModel = TotalPriceViewModel(totalPrice: totalPriceText,

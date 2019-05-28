@@ -23,8 +23,6 @@ class CandyView: UIViewController {
     
     var presenter: CandyPresenterProtocol?
     
-    private var object : CandyEntity?
-    
     @IBOutlet weak private var candyImageView: UIImageView!
     @IBOutlet weak private var titleLabel: UILabel!
     @IBOutlet weak private var descriptionLabel: UILabel!
